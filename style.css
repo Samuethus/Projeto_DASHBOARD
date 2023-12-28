@@ -13,8 +13,9 @@
 :root{
     --color-primary: #6c9bc7;
     --color-danger: #075E94;
-    --color-sucess: #1B9C85;
+    --color-success: #1B9C85;
     --color-warning: #F7D060;
+    --color-declined: #FF0060;
     --color-white: #FFF;
     --color-info-dark: #7D8DA1;
     --color-dark: #363949;
@@ -26,8 +27,8 @@
     --border-radius-1: 0.4rem;
     --border-radius-2: 1.2rem;
 
-    --card-pading: 1.8rem;
-    --padding-1: 1.2rem;
+    --card-pading: 1.4rem;
+    --padding-1: 1rem;
 
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
@@ -116,11 +117,15 @@ b{
 }
 
 .success{
-    color: var(--color-sucess);
+    color: var(--color-success);
 }
 
 .warning{
     color: var(--color-warning);
+}
+
+.declined{
+    color: var(--color-declined);
 }
 
 .container{
@@ -239,6 +244,7 @@ main .analyse{
    display: grid;
    grid-template-columns: repeat(3,1fr); 
    gap: 1.6rem;
+   /*ESSE GAP É A REFERENCIA PARA O TAMANHO DA PAGINA*/
 }
 
 main .analyse > div {
@@ -302,7 +308,11 @@ main .analyse .progress .percentage{
 }
 
 main .new-users{
-    margin-top: 1.3rem;
+    margin-top: var(--padding-1);
+}
+
+main .new-users .user-list .user h2{
+    font-size: 1.1rem;
 }
 
 main .new-users .user-list{
@@ -330,8 +340,41 @@ main .new-users .user-list .user{
 }
 
 main .new-users .user-list .user img{
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
 }
 
+main .recent-orders h2{
+    padding: var(--padding-1);
+}
+
+main .recent-orders table{
+    background-color: var(--color-white);
+    width: 100%;
+    padding: var(--card-pading);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
+    transition: all 0.3s ease;
+}
+
+main .recent-orders table:hover{
+    box-shadow: none;
+}
+
+main table tbody td{
+    height: 2rem;
+    border-bottom: 1px solid var(--color-light);
+}
+
+main table tbody tr:last-child td{
+    border: none;
+}
+
+main .recent-orders a{
+    display: block;
+    text-align: center;
+    margin: 0.8rem auto;
+    color: var(--color-primary);
+}
