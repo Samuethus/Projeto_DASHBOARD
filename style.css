@@ -575,6 +575,7 @@ main .recent-orders {
     transform: translateX(-50%);
     margin: 0.8rem 0 0 0.8rem;
 }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -584,6 +585,7 @@ main .recent-orders {
     grid-template-columns: 1fr;
     padding: 0 var(--padding-1);
 }
+
 
 aside .logo img{
     margin-left: 0rem;
@@ -646,9 +648,11 @@ main .new-users .user-list .user{
 main .recent-orders{
     position: relative;
     margin: 0.8rem 0rem 0 0.8rem;
-    left: 17.5rem;
+    left: 48%;
     width: 99%;
+    transform: translateX(-50%);
 }
+
 
 .right-section .nav{
     position: fixed;
