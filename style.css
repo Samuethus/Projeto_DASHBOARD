@@ -441,6 +441,7 @@ main .recent-orders a{
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
+    margin: 0.8rem 0rem 0 0.8rem;
 }
 
 .right-section .user-profile:hover{
@@ -481,6 +482,7 @@ main .recent-orders a{
     border-radius: var(--border-radius-2);
     box-shadow: var(--box-shadow);
     transition: all 0.3s ease;
+    margin: 0.8rem 0rem 1rem 0.8rem;
 }
 
 .right-section .reminders .notifications:hover{
@@ -581,7 +583,7 @@ main .recent-orders {
 @media screen and (max-width: 768px) {
     
 .container{
-    width: 100%;
+    width: 95%;
     grid-template-columns: 1fr;
     padding: 0 var(--padding-1);
 }
